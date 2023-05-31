@@ -1,0 +1,20 @@
+
+<mat-toolbar color="primary">
+   
+    <div class="spacer3" >
+      <a mat-button  routerLink = "timesheet-upload" >timesheetUpload</a>
+      
+    </div>
+    <div class="spacer1">
+      <a mat-button  routerLink = "admin-login" ><mat-icon>admin_panel_settings</mat-icon>Admin</a>
+      <a mat-raised-button color = "accent" (click)="logout()" >logout</a>
+    
+    </div>
+    
+  </mat-toolbar>
+  <router-outlet></router-outlet>
+  <footer class="footer" style="text-align: center ; color: red; padding: 30px 0px 0px 0px;">
+    <div class="container">
+        <span>All Rights Reserved 2022 @Ojas Innovative technologies</span>
+    </div>
+  </footer>

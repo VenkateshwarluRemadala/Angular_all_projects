@@ -1,0 +1,36 @@
+<p>updatestudent works!</p>
+<div class="panel panel-primary">
+    <div class="panel-heading">
+      <h2>Employee List</h2>
+    </div>
+    <div class="panel-body">
+      <table class="table table-striped table-striped">
+        <thead>
+          <tr>
+            <th>StudentName</th>
+            <th>StudentCourse</th>
+            <th>Studentdob</th>
+
+            <th>StudentAge</th>
+            <th>StudentImage</th>
+            <th>UpdatedAge</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let student of students|paginate:{id:'listing-pagination',itemsPerPage:1,currentPage:page,totalItems:totalRecords}">
+            <td>{{student.name}}</td>
+            <td>{{student.course}}</td>
+            <td>{{student.dob|date:'dd/mm/yyyy'}}</td>
+            <td>{{student.age}}</td>
+            <td><img src="{{student.photo}}"/></td>
+            <!-- <td><button (click)=" deletestudent(student.id)" class="btn btn-danger">Delete</button> -->
+           <!-- <td> <button (click)="updateForm(e.id)"class="btn btn-danger">Edit</button></td> -->
+           <td>{{student.dob|custom}}</td>
+          </tr>
+        </tbody>
+      </table>
+      <div>
+          <pagination-controls id="listing-pagination"  (pageChange)="page=$event" ></pagination-controls>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,83 @@
+<!-- <p>reactiveforms works!</p>
+<form  #tempobject="ngForm"  (ngSubmit)="Createdata(tempobject)">
+    <div class="form-group">
+        <label for="first">Enter FirstName</label>
+        <input type="text" id="first" name="firstname" ngModel/>
+    </div>
+    <div class="form-group">
+        <label for="first">Enter LastName</label>
+        <input type="text" id="first" name="lastname" ngModel/>
+    </div>
+    <div class="form-group">
+        <label for="first">Enter Your Age</label>
+        <input type="text" id="first" name="age" ngModel/>
+    </div>
+    <div class="form-group">
+        <label for="first">Enter Your Contact Number</label>
+        <input type="text" id="first" name="contact" ngModel/>
+    </div>
+    <div class="form-group">
+        <button type="submitt">submitt</button>
+    </div>
+
+</form>
+<div>
+    <h1>{{templateobject.firstname}}</h1>
+    <h1>{{templateobject.lastname}}</h1>
+    
+</div> -->
+
+<!-- <h1>first name is {{templateobject.firstname}}</h1>
+<h1>Last name is {{templateobject.lastname}}</h1>
+<h1> Age is {{templateobject.age}}</h1>
+<h1>Contact is {{templateobject.contact}}</h1>
+<h1>Gender is{{templateobject.male}}</h1> -->
+<!-- <form [formGroup]="loginForm" (ngSubmit)="collectdata(datas)">
+    <input type="text" placeholder="Enter Your Name" formControlName="username" name="username" />
+    <input type="text" placeholder="Enter Your Name" formControlName="password" name="password"/>
+    <button  type="submit">Submitt</button>
+
+ </form> 
+<form    [formGroup]="loginForm" (ngSubmit)="collectdata()">
+    <input type="text" formControlName="firstname" placeholder="Enter Your First Name"/><br><br>
+    <input type="text" formControlName="lastname" placeholder="Enter Your Last Name"/><br><br>
+    <input type="text" formControlName="password" placeholder="Enter Your password"/><br><br>
+    <input type="text" formControlName="age" placeholder="Enter Your age"/><br><br>
+    <input type="text" formControlName="contact" placeholder="Enter Your contact"/><br><br>
+    <input type="text" formControlName="dob" placeholder="Enter Your date of birth"/><br><br>
+    <input type="text" formControlName="adar" placeholder="Enter Your adarnumber"/><br><br>
+    <input type="text" formControlName="add" placeholder="Enter Your address"/><br><br>
+  <button type="submit">Submitt</button>
+</form>
+
+
+<normal two way data binding by using the ngModel>
+<hr>
+<input type="text" placeholder="enter firstname" [(ngModel)]="venkat.firstname"/><br><br>
+<input type="text" placeholder="enter firstname" [(ngModel)]="venkat.lastname"/><br><br>
+<input type="text" placeholder="enter firstname" [(ngModel)]="venkat.password"/><br><br>
+<input type="text" placeholder="enter firstname" [(ngModel)]="venkat.age"/><br><br>
+<button type="submit" (click)="collectdata()">submit</button>
+<h1>{{venkat.firstname}}</h1>
+<h1>{{venkat.lastname}}</h1>
+<h1>{{venkat.password}}</h1>
+<h1>{{venkat.age}}</h1> -->
+<form    [formGroup]="loginForm" (ngSubmit)="collectdata()">
+    <input type="text" formControlName="firstname" placeholder="Enter Your First Name"/><br><br>
+ <!-- <span *ngIf="firstname.invalid">enter first name</span> -->
+    <input type="text" formControlName="lastname" placeholder="Enter Your Last Name"/><br><br>
+
+    <input type="text" formControlName="password" placeholder="Enter Your password"/><br><br>
+
+    <input type="text" formControlName="age" placeholder="Enter Your age"/><br><br>
+
+    <input type="text" formControlName="contact" placeholder="Enter Your contact"/><br><br>
+
+    <input type="text" formControlName="dob" placeholder="Enter Your date of birth"/><br><br>
+
+    <input type="text" formControlName="adar" placeholder="Enter Your adarnumber"/><br><br>
+
+    <input type="text" formControlName="add" placeholder="Enter Your address"/><br><br>
+
+  <button type="submit">Submitt</button>
+</form>

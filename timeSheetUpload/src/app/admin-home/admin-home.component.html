@@ -1,0 +1,57 @@
+<!-- <p>admin-home works!</p> -->
+<!-- <mat-form-field appearance="standard">
+<mat-label>Filter Table</mat-label>
+<input matInput placeholder=""search />
+</mat-form-field>
+<div>
+    <table mat-table matSort>
+      <ng-container matColumnDef="empName">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Name</th>
+          <td mat-cell>This is name</td>
+      </ng-container>
+      <ng-container matColumnDef="clientName">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>employeeClientName</th>
+        <td mat-cell>This is clientName</td>
+      </ng-container>
+      <ng-container matColumnDef="startDate">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>timeSheetStartDate</th>
+        <td mat-cell>This is timesheet startDate</td>
+     </ng-container>
+     <ng-container matColumnDef="endDate">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>timeSheetEndDate</th>
+        <td mat-cell>This is timesheet endDate</td>
+     </ng-container>
+     <tr mat-header-row *matHeaderRowDef="displayedColumn"></tr>
+     <tr mat-row *matRowDef="let row; column:displayedColumn"></tr>
+    </table>
+</div> -->
+<nav class="navbar">
+ <input class="form-control" type="text" name="empName" [(ngModel)] = "empName" (ngModelChange) = "Search()"
+ placeholder=" Enter employee name to search"/>
+</nav>
+<table class="table table-bordered">
+<thead>
+    <tr>
+        <th (click)="sort('empId')">EmployeeID&nbsp;<i class="fa fa-sort"></i></th>
+        <th (click)="sort('empName')">employeeName&nbsp;<i class="fa fa-sort"></i></th>
+        
+        <th>Employee ClientName</th>
+        <th>TimeSheet StartDate</th>
+        <th>TimeSheet EndDate</th>
+        
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor="let employee of employeeDataList | orderBy : key :reverse | paginate:{itemsPerPage:5, currentPage:p}">
+        <td>{{employee.empId}}</td>
+        <td>{{employee.empName}}</td>
+        <td>{{employee.clientName}}</td>
+        <td>{{employee.startDate}}</td>
+        <td>{{employee.endDate}}</td>
+        <td>{{employee.fileName}}</td>
+
+    </tr>
+
+</tbody>
+<pagination-controls (pageChange) = "p = $event"></pagination-controls>
+</table>

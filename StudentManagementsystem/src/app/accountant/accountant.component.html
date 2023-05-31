@@ -1,0 +1,25 @@
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">FeeReport</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="listacount">List of acountants </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="addacount">Add accountant</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="updateacount">Update accountant</a>
+        </li>
+        
+        <button class="btn btn-danger" (click)="logout()">Logout</button>
+      </ul>
+    </div>
+  </nav>
+  <router-outlet></router-outlet>
+  
+  

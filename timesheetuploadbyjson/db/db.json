@@ -1,0 +1,72 @@
+{
+  "admin-login": [
+    {
+      "id": 101,
+      "adminUsername": "narender",
+      "admiPassword": 123456789
+    }
+  ],
+  "employeeregistration": [
+    {
+      "id": 1,
+      "empId": 21330,
+      "employeeName": "venkat",
+      "employeeClient": "ojas",
+      "employeePassword": "9948559416",
+      "employeeContactNumber": "9948559416",
+      "employeeMail": "venkatremadala@ojas-it.com"
+    },
+    {
+      "empId": "a",
+      "employeeName": "a",
+      "employeeClient": "s",
+      "employeePassword": "a",
+      "employeeContactNumber": "a",
+      "employeeMail": "a",
+      "id": 2
+    },
+    {
+      "empId": "d",
+      "employeeName": "d",
+      "employeeClient": "df",
+      "employeePassword": "f",
+      "employeeContactNumber": "d",
+      "employeeMail": "d",
+      "id": 3
+    }
+  ],
+  "employee-timesheet": [
+    {
+      "id": 101,
+      "empId": 21330,
+      "employeeName": "venkat",
+      "employeeClient": "ojas",
+      "employeeContactNumber": 9948559416,
+      "employeeMail": "venkatremadala@ojas-it.com"
+    },
+    {
+      "id": 102,
+      "empId": 21331,
+      "employeeName": "kalyan",
+      "employeeClient": "ojas",
+      "employeeContactNumber": 9923463673,
+      "employeeMail": "kalyanpatghibandla@ojas-it.com"
+    },
+    {
+      "id": 103,
+      "empId": 21332,
+      "employeeName": "krishna",
+      "employeeClient": "ojas",
+      "employeeContactNumber": 8838538323,
+      "employeeMail": "krishnadanduboina@ojas-it.com"
+    },
+    {
+      "id": 104,
+      "empId": 21333,
+      "employeeName": "vinay",
+      "employeeClient": "persistance",
+      "employeeContactNumber": 7788991233,
+      "employeeMail": "vinaygangula@persistance-it.com"
+    }
+  ]
+}

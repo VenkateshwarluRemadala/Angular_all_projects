@@ -1,0 +1,81 @@
+<div class="fileupload">
+    <div class="container">
+        <div class="card">
+          <div class="card-header">
+            <h2 style="text-align: center;">Employee TimeSheet UpLoad </h2>
+          </div>
+          <div class="card-body">
+            <div>
+                <form [formGroup]="timeSheet">
+                    <div>
+                        <div>
+                            <label for="first-name"> Employee Name: </label><br>
+                            <input id="first-name" type="text" formControlName="empName" class="form-control"
+                                placeholder="employeeName" autocomplete="off"> <br>
+                            <span
+                                *ngIf="timeSheet.get('empName')?.errors && timeSheet.get('empName')?.touched "
+                                id="demo"><p>*Name Required</p></span>
+                            <!-- <span *ngIf="loginform.get('Name')?.errors?.maxlength" >*name should be maximum 10</span> -->
+                        </div>
+                        <!-- <div>
+                            <label for="employeeid">Employee Id: </label><br>
+                            <input id="employeeid" type="text" formControlName="employeeid" class="form-control"
+                                placeholder="employeeid"> <br>
+                            <span *ngIf="loginform.get('employeeid')?.errors && loginform.get('employeeid')?.touched "
+                                id="demo"><p>*EmployeeId is Required</p></span>
+                            <span *ngIf="loginform.get('password')?.errors?.minlength" >*password should be minimum 4</span>
+                        </div> -->
+                        <div>
+                            <label for="first-name"> Employee Id: </label><br>
+                            <input id="first-name" type="text" formControlName="empId" class="form-control"
+                                placeholder="employeeID" autocomplete="off"> <br>
+                            <span
+                                *ngIf="timeSheet.get('empName')?.errors && timeSheet.get('empName')?.touched "
+                                id="demo"><p>*Name Required</p></span>
+                            <!-- <span *ngIf="loginform.get('Name')?.errors?.maxlength" >*name should be maximum 10</span> -->
+                        </div>
+                        <div>
+                            <label for="ClientName">ClientName </label><br>
+                            <input id="ClientName" type="text" formControlName="clientName" class="form-control"
+                                placeholder="clientName" autocomplete="off"> <br>
+                            <span *ngIf="timeSheet.get('clientName')?.errors && timeSheet.get('clientName')?.touched "
+                                id="demo"><p>*ClientName is Required</p></span>
+                            <!-- <span *ngIf="loginform.get('password')?.errors?.minlength" >*password should be minimum 4</span> -->
+                        </div>
+                        <div>
+                            <label for="Startdate">Timesheet Startdate </label><br>
+                            <input id="Startdate" type="date" formControlName="startDate" class="form-control"
+                                class="form-control" placeholder="yyyy-dd-mm" [min]="getToday()" autocomplete="off"> <br>
+                            <span *ngIf="timeSheet.get('startDate')?.errors && timeSheet.get('startDate')?.touched "
+                                id="demo"><p>*Startdate is Required</p></span>
+                            <!-- <span *ngIf="loginform.get('password')?.errors?.minlength" >*password should be minimum 4</span> -->
+                        </div>
+                        <div>
+                            <label for="endDate">Timesheet Enddate</label><br>
+                            <input id="endDate" type="date" formControlName="endDate" class="form-control"  placeholder="yyyy-dd-mm" [min]="getToday()" autocomplete="off"> <br>
+                            <span *ngIf="timeSheet.get('endDate')?.errors && timeSheet.get('endDate')?.touched "
+                                id="demo"><p>*EndDate is Required</p></span>
+                            <!-- <span *ngIf="loginform.get('password')?.errors?.minlength" >*password should be minimum 4</span> -->
+                        </div>
+                        <div>
+                            <label for="FileName">UploadFile</label><br>
+                            <input id="FileName" type="file" formControlName="fileName" class="form-control"
+                                style="padding-top: 3px;"  (change)="onImageChangeFromFile($event)" autocomplete="off" multiple = "multiple"> <br>
+                            <span *ngIf="timeSheet.get('fileName')?.errors && timeSheet.get('fileName')?.touched "
+                                id="demo"><p>{{errorMessgae}}</p></span>
+                            <!-- <span *ngIf="loginform.get('password')?.errors?.minlength" >*password should be minimum 4</span> -->
+                            
+                        </div>
+                        <div>
+                            <button style="margin-left: 40%;" (click)="submited()" [disabled]="!timeSheet.valid" >Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+          </div>
+        <div>
+     </div>
+
+</div>
+

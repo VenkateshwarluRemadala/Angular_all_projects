@@ -1,0 +1,22 @@
+
+.container1{
+    background-color: lightgrey;
+    height: 300px;
+    width: 300px;
+    border: 2px solid black;
+    margin: 50px 150px 50px 10px;
+    
+}
+.container2{
+    
+        background-color: lightgrey;
+        height: 300px;
+        width: 300px;
+        border: 2px solid black;
+        margin-left: 350px;
+        margin-top: -350px;
+    
+}
+.submision{
+    
+}

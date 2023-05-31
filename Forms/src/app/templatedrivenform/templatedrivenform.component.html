@@ -1,0 +1,87 @@
+<!-- <<form #tempobject="ngForm" (ngSubmit)="Createdata(tempobject)">
+    <div>
+        <label for="firstname">
+            Enter FirstName
+        </label>
+        <input type="text" name="firstname" ngModel required  #firstname="ngModel"/>
+        <span *ngIf="firstname.touched && !firstname.valid">Enter firstname</span>
+    </div>
+    <div>
+        <label for="lastname">
+            Enter lastName
+        </label>
+        <input type="text" name="lastname" ngModel required #lastname="ngModel"/>
+        <span *ngIf="lastname.touched && !lastname.valid">Enter lastname</span>
+    </div>
+    <div>
+        <label for="age">
+            Enter Your Age
+        </label>
+        <input type="number" name="age" ngModel required #age="ngModel"/>
+        <span *ngIf="age.touched && !age.valid">Enter Your Age</span>
+    </div>
+    <div>
+        <label for="contact">
+            Enter Your Contact Number
+        </label>
+        <input type="number" name="contact" ngModel required #contact="ngModel"/>
+        <span *ngIf="contact.touched && !contact.valid">Enter Your Contact</span>
+    </div>
+    
+    
+    <div>
+        <button type="submit" >Submit</button>
+    </div>
+</form>
+
+ -->
+<!-- <form #tempobject="ngForm" (ngSubmit)="createdata(tempobject)">
+    <div>
+    <label for= "firstname">
+        enter any name
+    </label>
+    <input type="text" placeholder="enter your firstname" name="firstname" ngModel required #firstname="ngModel"/>
+    </div>
+    <div>
+        <label for= "lastname">
+            enter any name
+        </label>
+        <input type="text" placeholder="enter your lastname"  name="lastname" ngModel required #lastname="ngModel"/>
+    </div>
+    <div>
+        <button type="submit">Submit</button>
+    </div>
+
+</form> -->
+
+<!-- <form #objects="ngForm" (ngSubmit)="createdata(objects)">
+    <input type="text" name="firstname" ngModel required #firstname="ngModel"/><br>
+    <input type="text" name="lastname" ngModel required #firstname="ngModel"/><br>
+    <input type="text" name="password" ngModel required #password="ngModel"/><br>
+ <button type="submit">Submit</button>
+
+</form> -->
+
+<input type="text" [(ngModel)]="obj.name" >
+<input type="text" [(ngModel)]="obj.age">
+<h1>{{obj.name}}</h1>
+<h1>{{obj.age}}</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
