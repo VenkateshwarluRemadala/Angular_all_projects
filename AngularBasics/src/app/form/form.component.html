@@ -1,0 +1,17 @@
+<form (ngSubmit)="createdata(name.value,age.value,mob.value,add.value)">
+    <input type="text" placeholder="enter your name" #name/>
+    <input type="text" placeholder="enter your age" #age/>
+    <input type="text" placeholder="enter your mob" #mob/>
+    <input type="text" placeholder="enter your add" #add/>
+    <button type="submit" >submitt</button>
+</form>
+<p>Name is:{{name1}}</p>
+<p>Age is:{{age1}}</p>
+<p>Mobile Number is:{{phone1}}</p>
+<p>Address is:{{address1}}</p>
+<input type="text" [(ngModel)]="ram">
+<input type="text" [(ngModel)]="kam">
+<p>{{ram}}</p>
+<p>{{kam}}</p>
+<ul *ngFor="let a of list">
+    <li>{{a}}</li></ul>

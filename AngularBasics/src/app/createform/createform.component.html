@@ -1,0 +1,21 @@
+<form (ngSubmit)="createdata()">
+    <div class="form-group">
+      <label for="name">Employee Name</label>
+      <input type="text" class="form-control"  required [(ngModel)]="form.fname" name="fname">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Employee Address</label>
+      <input type="text" class="form-control"  required [(ngModel)]="form.fgrade" name="fgrade">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Email Id</label>
+      <input type="text" class="form-control"  required [(ngModel)]="form.fadd" name="fadd">
+    </div>
+    <div class="form-group">
+      <label for="name">Enter Number</label>
+      <input type="text" class="form-control"  required [(ngModel)]="form.fcontact" name="fcontact">
+    </div>
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>

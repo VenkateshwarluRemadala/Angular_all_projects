@@ -1,0 +1,34 @@
+{
+  "registration": [
+    {
+      "id": 1,
+      "name": "venkat",
+      "age": "20",
+      "password": "123"
+    },
+    {
+      "name": "saikumar",
+      "age": "edsfd",
+      "passwor": "dsc",
+      "id": 2
+    },
+    {
+      "name": "srenivas",
+      "age": "erfvdvsfccfs",
+      "passwor": "dadvdfvfv",
+      "id": 3
+    },
+    {
+      "name": "krish",
+      "age": "sccx",
+      "passwor": "krish",
+      "id": 4
+    },
+    {
+      "name": "vijay",
+      "age": "grdggegre",
+      "passwor": "gbfbg",
+      "id": 5
+    }
+  ]
+}

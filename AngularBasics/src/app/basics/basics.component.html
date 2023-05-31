@@ -1,0 +1,31 @@
+<p>basics works!</p>
+<h1>here vachesadu royyyyyy</h1>
+<h1>thingaroda vinay</h1>
+<h1>agaammmm bamrdi</h1>
+<div class="panel panel-primary">
+    <div class="panel-heading">
+      <h2>Employee List</h2>
+    </div>
+    <div class="panel-body">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>EmployeeName</th>
+            <th>EmployeeAddress</th>
+            <th>Email</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let e of forms">
+            <td>{{e.fname}}</td>
+            <td>{{e.fadd}}</td>
+            <td>{{e.fgrade}}</td>
+            <td>{{e.fcontact}}</td>
+           <td> <button (click)="updateForm(e.id)"class="btn btn-danger">Edit</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
