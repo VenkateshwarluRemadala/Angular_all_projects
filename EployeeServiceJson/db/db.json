@@ -1,0 +1,31 @@
+{
+  "employees": [
+    {
+      "id": 4,
+      "ename": "venkatesh",
+      "eadd": "21330",
+      "email": "venkatesh@123"
+    },
+    {
+      "id": 6,
+      "ename": "heroine",
+      "eadd": "ojas",
+      "email": "heroine@1233213",
+      "cname": ""
+    },
+    {
+      "id": 7,
+      "ename": "kalyan",
+      "eadd": "21333",
+      "email": "kalyankumar@icloud.com",
+      "cname": ""
+    },
+    {
+      "id": 8,
+      "ename": "moddevinay",
+      "eadd": "21330",
+      "email": "venkateshrema@gmail.com",
+      "cname": ""
+    }
+  ]
+}

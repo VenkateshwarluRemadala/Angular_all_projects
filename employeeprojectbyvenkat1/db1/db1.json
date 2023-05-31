@@ -1,0 +1,22 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "ename": "vinnu",
+      "eadd": "uruuuuu",
+      "email": "vinnu@gamil.com"
+    },
+    {
+      "id": 2,
+      "ename": "shiva",
+      "eadd": "hyd",
+      "email": "yanam@gamil.com"
+    },
+    {
+      "id": 3,
+      "ename": "venkat",
+      "eadd": "bangloore",
+      "email": "venakat@gamil.com"
+    }
+  ]
+}

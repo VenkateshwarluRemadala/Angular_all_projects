@@ -1,0 +1,25 @@
+<p>one works!</p>
+<h1>hello</h1>
+<!-- <button type="button" onclick="getNumbers()">clickHere</button> -->
+
+<table>
+  <thead>
+      <tr>
+          <th>evenNumbers</th>    
+      </tr>
+      <tr>
+        <th>oddNumbers</th>
+      </tr>
+      
+  </thead>
+ 
+  <tbody>
+      <tr *ngFor=" let i of evenNumbers">
+          <td >{{i}}</td> 
+      </tr>
+      <tr *ngFor=" let i of oddNumbers">
+        <td>{{i}}</td>
+      </tr>
+  </tbody>
+
+</table>
